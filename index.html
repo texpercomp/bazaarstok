@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Giriş Ekranı</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #ffffff; /* Arka planı beyaz yapalım */
+      position: relative;
+      min-height: 100vh;
+      color: #000; /* Yazılar siyah olacak */
+    }
+
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 30px 20px 60px;
+      text-align: center;
+    }
+
+    .logo {
+      width: 200px; /* Logoyu büyütüyoruz */
+      height: auto;
+      margin-bottom: -30px; /* Logo ve başlık arasındaki boşluğu ayarlıyoruz */
+      display: block; /* Çerçeve ve gölgeyi kaldırdık */
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    h1 {
+      font-size: 26px;
+      color: #333; /* Başlık rengi siyah olacak */
+      font-weight: bold;
+      margin-top: 10px; /* Başlık için üstten biraz boşluk ekliyoruz */
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      border-bottom: 2px solid #0288d1;
+      padding-bottom: 10px;
+    }
+
+    .note {
+      font-size: 14px;
+      color: #888;
+      margin-top: 10px;
+      font-style: italic;
+    }
+
+    .button {
+      display: block;
+      width: 80%;
+      max-width: 320px;
+      margin: 12px auto;
+      padding: 14px;
+      background-color: #000; /* Buton siyah olacak */
+      color: white; /* Yazılar beyaz olacak */
+      border: none;
+      border-radius: 10px;
+      font-size: 18px;
+      text-decoration: none;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    .button:hover {
+      background-color: #333; /* Buton üzerine gelince renk değişsin */
+      transform: scale(1.03);
+    }
+
+    .footer {
+      position: absolute;
+      right: 10px;
+      bottom: 10px;
+      font-size: 13px;
+    }
+
+    .footer a {
+      color: #000;
+      font-weight: bold;
+      text-decoration: none;
+      position: relative;
+      display: inline-block;
+      overflow: hidden;
+    }
+
+    .footer a::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.6), transparent);
+      animation: shine 2.5s infinite;
+    }
+
+    @keyframes shine {
+      0% {
+        left: -100%;
+      }
+      100% {
+        left: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="logo.jpg" alt="Logo" class="logo">
+
+    <h1>Stok Sorgulama</h1>
+
+    <p class="note">Eğer bir giriş çalışmazsa, lütfen diğerini deneyin.</p>
+
+    <a href="http://78.188.68.150:5555/Account/Login" class="button">Giriş</a>
+  </div>
+
+  <div class="footer">
+    <a href="https://texper.com.tr" target="_blank">Powered by Texper</a>
+  </div>
+</body>
+</html>
