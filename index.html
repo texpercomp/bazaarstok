@@ -74,12 +74,18 @@
             transform: scale(1.03);
         }
 
+        /* Giriş 2 butonu için farklı bir renk isterseniz burayı kullanabilirsiniz, 
+           şu an varsayılan siyah buton stilini kullanıyor */
+        .button-alt {
+            background-color: #444; 
+        }
+
         .footer {
             text-align: center;
             font-size: 13px;
             padding: 10px;
             background-color: #fff;
-            margin-top: 6em; /* 6 satır aşağı indir (önceki 4 + 2) */
+            margin-top: 6em; 
         }
 
         .footer a {
@@ -103,39 +109,19 @@
         }
 
         @keyframes shine {
-            0% {
-                left: -100%;
-            }
-            100% {
-                left: 100%;
-            }
+            0% { left: -100%; }
+            100% { left: 100%; }
         }
 
-        /* Responsive Tasarım: Telefonlar için */
         @media (max-width: 480px) {
-            h1 {
-                font-size: 20px;
-            }
-
-            .button {
-                font-size: 16px;
-                padding: 12px;
-            }
-
-            .footer a {
-                font-size: 12px;
-            }
+            h1 { font-size: 20px; }
+            .button { font-size: 16px; padding: 12px; }
+            .footer a { font-size: 12px; }
         }
 
-        /* Daha geniş ekranlar için (tablet vb.) */
         @media (max-width: 768px) {
-            h1 {
-                font-size: 22px;
-            }
-
-            .button {
-                font-size: 18px;
-            }
+            h1 { font-size: 22px; }
+            .button { font-size: 18px; }
         }
     </style>
 </head>
@@ -143,10 +129,11 @@
     <div class="container">
         <img src="logo.jpg" alt="Logo" class="logo">
         <h1>Stok Sorgulama</h1>
-        <p class="note">Giriş için aşşagıdaki butona tıklayın</p>
+        <p class="note">Giriş için aşağıdaki butonlara tıklayın</p>
+        
         <a href="http://9090.mallofbazaar.keenetic.link" class="button">Giriş 1</a>
+        <a href="http://78.188.68.150:5555/Account/Login" class="button">Giriş 2</a>
 
-        <!-- Ping gif dosyasını sadece texper.com.tr üzerinden çağırıyoruz -->
         <img src="https://texper.com.tr/ping.gif" alt="Ping" style="display: none;"/>
 
         <div class="footer">
@@ -155,5 +142,3 @@
     </div>
 </body>
 </html>
-
-
